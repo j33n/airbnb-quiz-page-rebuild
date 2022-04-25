@@ -15,7 +15,7 @@ import {
 } from 'styles/HomeStyle'
 
 const Home = () => {
-  const [blockScroll, allowScroll] = useScrollBlock()
+  const [blockScroll] = useScrollBlock()
 
   useEffect(() => {
     blockScroll()

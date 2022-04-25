@@ -21,6 +21,9 @@ declare interface IQuestion {
   size: number
 }
 
+// TODO: toggle checkboxes/
+const handleChange = (checked: boolean) => {}
+
 const Question = ({data, size}: IQuestion) => {
   return (
     <ContainerStyled id={`section-${data.id}`}>
@@ -45,8 +48,8 @@ const Question = ({data, size}: IQuestion) => {
         {data.answers.map((answer: AnswerType) => (
           <CheckBox
             label={answer.description}
-            value={true}
             href={`#section-${data.id + 1}`}
+            handleChange={() => handleChange}
           />
         ))}
       </RightBoxStyled>
