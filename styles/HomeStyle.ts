@@ -19,10 +19,10 @@ export const MainContainerStyle = styled.section`
 
 export const QuizContainerStyle = styled.div`
   display: flex;
-  max-width: 1144px;
-  width: 100%;
+  width: 70vw;
   padding-left: 25px;
   padding-right: 25px;
+  margin: auto;
 `
 
 export const QuizTitleStyle = styled.p`
