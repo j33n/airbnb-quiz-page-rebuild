@@ -1,4 +1,4 @@
-import {IBox} from '../../types'
+import {IBox} from '../../../types'
 
 import {Container} from './BoxStyle'
 

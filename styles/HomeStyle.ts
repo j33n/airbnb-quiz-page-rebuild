@@ -1,11 +1,25 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`
+
 export const MainContainerStyle = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 555px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+`
+
+export const QuizContainerStyle = styled.div`
+  display: flex;
+  max-width: 1144px;
+  width: 100%;
   padding-left: 25px;
   padding-right: 25px;
 `
