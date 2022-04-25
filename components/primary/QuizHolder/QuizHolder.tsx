@@ -10,7 +10,7 @@ const QuizHolder = () => {
   return (
     <Container>
       {quizData.map((quiz: QuestionType) => (
-        <Question data={quiz} size={quizData.length} />
+        <Question data={quiz} size={quizData.length} key={quiz.id} />
       ))}
     </Container>
   )

@@ -9,7 +9,7 @@ import Logo from 'assets/ba_logo.png'
 const Header = () => {
   return (
     <Container>
-      <Image src={Logo} width={75} height={68} layout="fixed" />
+      <Image src={Logo} width={75} height={68} layout="fixed" alt="logo" />
       <Box>
         <Heading>Airbnb Trip Matcher</Heading>
       </Box>

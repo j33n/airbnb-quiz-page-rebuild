@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     blockScroll()
-  }, [])
+  }, [blockScroll])
 
   return (
     <Container>

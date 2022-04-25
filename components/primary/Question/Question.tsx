@@ -47,6 +47,7 @@ const Question = ({data, size}: IQuestion) => {
       <RightBoxStyled>
         {data.answers.map((answer: AnswerType) => (
           <CheckBox
+            key={answer.id}
             label={answer.description}
             href={`#section-${data.id + 1}`}
             handleChange={() => handleChange}
