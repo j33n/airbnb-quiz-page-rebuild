@@ -4,7 +4,6 @@ export const Container = styled.div`
   position: relative;
   display: table;
   padding: 28px 43px 32px 31px;
-  font
 `
 
 export const LabelStyled = styled.label`

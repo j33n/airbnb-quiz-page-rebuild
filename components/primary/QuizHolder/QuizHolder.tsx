@@ -1,4 +1,4 @@
-import { Question} from 'components'
+import {Question} from 'components'
 
 import {QuestionType} from 'types'
 
@@ -17,3 +17,4 @@ const QuizHolder = () => {
 }
 
 export default QuizHolder
+4

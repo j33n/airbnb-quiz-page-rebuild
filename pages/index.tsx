@@ -1,22 +1,33 @@
-import {Header, QuizHolder} from 'components'
+import Link from 'next/link'
+
+import {Header, QuizHolder, ScrollerButton} from 'components'
 
 import {
   MainContainerStyle,
   QuizTitleStyle,
   Container,
   QuizContainerStyle,
+  VerticalLineStyled,
+  HeaderContentStyled,
 } from 'styles/HomeStyle'
 
 const Home = () => {
   return (
     <Container>
-      <MainContainerStyle>
-        <Header />
-        <QuizTitleStyle>Take the quiz</QuizTitleStyle>
+      <MainContainerStyle id="section-0">
+        <VerticalLineStyled />
+        <HeaderContentStyled>
+          <Header />
+          <QuizTitleStyle>Take the quiz!</QuizTitleStyle>
+          <Link href="#section-1">
+          <a>
+          <ScrollerButton/>
+          </a>
+          </Link>
+        </HeaderContentStyled>
       </MainContainerStyle>
       <QuizContainerStyle>
         <QuizHolder />
-        {/* TODO: Add a scroller */}
       </QuizContainerStyle>
     </Container>
   )

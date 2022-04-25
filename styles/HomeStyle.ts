@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 100%;
 `
 
-export const MainContainerStyle = styled.div`
+export const MainContainerStyle = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 555px;
@@ -14,6 +14,7 @@ export const MainContainerStyle = styled.div`
   margin-right: auto;
   padding-left: 25px;
   padding-right: 25px;
+  height: 100vh;
 `
 
 export const QuizContainerStyle = styled.div`
@@ -33,4 +34,20 @@ export const QuizTitleStyle = styled.p`
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
+`
+
+export const VerticalLineStyled = styled.div`
+  position: absolute;
+  width: 1px;
+  left: 50%;
+  margin-left: -0.5px;
+  border-right: 1px solid #e4e4e4;
+  height: 50%;
+  bottom: 0;
+  display: block;
+`
+
+export const HeaderContentStyled = styled.div`
+  background: #fff;
+  position: relative;
 `

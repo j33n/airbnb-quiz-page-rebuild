@@ -1,8 +1,18 @@
 import styled from 'styled-components'
 
+export declare interface IScrollStyled {
+  bottom?: boolean
+  top?: boolean
+  last?: boolean
+}
+
 export const ContainerStyled = styled.section`
   display: flex;
   flex-direction: row;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 `
 
 export const LeftBoxStyled = styled.div`
@@ -42,4 +52,29 @@ export const QuestionTitleStyled = styled.h1`
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 15px;
+`
+
+export const VerticalLineStyled = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  margin-left: -0.5px;
+  border-right: 1px solid #e4e4e4;
+`
+
+export const ScrollStyled = styled.div<IScrollStyled>`
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+  z-index: 100;
+  ${props =>
+    props.top &&
+    `
+    top: 40px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  `};
+  ${props => props.bottom && `bottom: 40px`};
+  display: ${props => (props.last ? 'none' : 'block')};
 `
