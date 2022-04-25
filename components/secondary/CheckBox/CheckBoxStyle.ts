@@ -62,6 +62,7 @@ export const InputStyled = styled.div<IActive>`
     props.active &&
     `
       border: solid 2px #fff;
+      
     `}
 `
 

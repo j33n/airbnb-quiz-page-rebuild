@@ -1,8 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import Link from 'next/link'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-
+import useScrollBlock from 'hooks/useScrollBlock'
 
 import {Header, QuizHolder, ScrollerButton} from 'components'
 
@@ -15,15 +14,13 @@ import {
   HeaderContentStyled,
 } from 'styles/HomeStyle'
 
-// const lockScroll = useCallback(() => {
-//   document.body.style.overflow = 'hidden';
-// }, [])
-
-// const unlockScroll = useCallback(() => {
-//   document.body.style.overflow = '';
-// }, [])
-
 const Home = () => {
+  const [blockScroll, allowScroll] = useScrollBlock()
+
+  useEffect(() => {
+    blockScroll()
+  }, [])
+
   return (
     <Container>
       <MainContainerStyle id="section-0">
@@ -32,9 +29,9 @@ const Home = () => {
           <Header />
           <QuizTitleStyle>Take the quiz!</QuizTitleStyle>
           <Link href="#section-1">
-          <a>
-          <ScrollerButton/>
-          </a>
+            <a>
+              <ScrollerButton />
+            </a>
           </Link>
         </HeaderContentStyled>
       </MainContainerStyle>
