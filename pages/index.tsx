@@ -1,10 +1,15 @@
-import {Box} from 'components'
+import {Header, QuizHolder} from 'components'
+
+import {MainContainerStyle, QuizTitleStyle} from 'styles/HomeStyle'
 
 const Home = () => {
   return (
-    <Box>
-      <p>hello my badass component</p>
-    </Box>
+    <MainContainerStyle>
+      <Header />
+      <QuizTitleStyle>Take the quiz</QuizTitleStyle>
+      <QuizHolder />
+      {/* TODO: Add a scroller */}
+    </MainContainerStyle>
   )
 }
 
