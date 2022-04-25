@@ -1,5 +1,6 @@
-import Link from 'next/link'
+import {useState} from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import {CheckBox, ScrollerButton} from 'components'
 
@@ -42,15 +43,11 @@ const Question = ({data, size}: IQuestion) => {
       </LeftBoxStyled>
       <RightBoxStyled>
         {data.answers.map((answer: AnswerType) => (
-          <Link href={`#section-${data.id + 1}`} scroll>
-            <a>
-              <CheckBox
-                label={answer.description}
-                value={true}
-                onChange={() => {}}
-              />
-            </a>
-          </Link>
+          <CheckBox
+            label={answer.description}
+            value={true}
+            href={`#section-${data.id + 1}`}
+          />
         ))}
       </RightBoxStyled>
       <ScrollStyled bottom last={size === data.id}>

@@ -21,6 +21,7 @@ export const LeftBoxStyled = styled.div`
   width: 50%;
   padding-left: 12.5px;
   padding-right: 57.5px;
+  margin: auto;
 `
 
 export const RightBoxStyled = styled.div`
@@ -30,6 +31,7 @@ export const RightBoxStyled = styled.div`
   padding-left: 57.5px;
   padding-right: 12.5px;
   padding-top: 30px;
+  margin: auto;
 `
 
 export const LabelStyled = styled.span`

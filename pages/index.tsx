@@ -1,4 +1,8 @@
+import React from 'react'
+
 import Link from 'next/link'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 import {Header, QuizHolder, ScrollerButton} from 'components'
 
@@ -10,6 +14,14 @@ import {
   VerticalLineStyled,
   HeaderContentStyled,
 } from 'styles/HomeStyle'
+
+// const lockScroll = useCallback(() => {
+//   document.body.style.overflow = 'hidden';
+// }, [])
+
+// const unlockScroll = useCallback(() => {
+//   document.body.style.overflow = '';
+// }, [])
 
 const Home = () => {
   return (
