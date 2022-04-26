@@ -1,6 +1,6 @@
-import {useState} from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+
+import {Link} from 'react-scroll'
 
 import {CheckBox, ScrollerButton} from 'components'
 
@@ -10,7 +10,6 @@ import {
   RightBoxStyled,
   LabelStyled,
   QuestionTitleStyled,
-  VerticalLineStyled,
   ScrollStyled,
 } from './QuestionStyle'
 
@@ -21,18 +20,14 @@ declare interface IQuestion {
   size: number
 }
 
-// TODO: toggle checkboxes/
-const handleChange = (checked: boolean) => {}
-
 const Question = ({data, size}: IQuestion) => {
+  const handleChange = (checked: boolean) => {}
+
   return (
     <ContainerStyled id={`section-${data.id}`}>
-      <VerticalLineStyled />
       <ScrollStyled top>
-        <Link href={`#section-${data.id - 1}`}>
-          <a>
-            <ScrollerButton />
-          </a>
+        <Link to={`section-${data.id - 1}`} smooth={true} duration={500}>
+          <ScrollerButton />
         </Link>
       </ScrollStyled>
       <LeftBoxStyled>
@@ -55,10 +50,8 @@ const Question = ({data, size}: IQuestion) => {
         ))}
       </RightBoxStyled>
       <ScrollStyled bottom last={size === data.id}>
-        <Link href={`#section-${data.id + 1}`}>
-          <a>
-            <ScrollerButton />
-          </a>
+        <Link to={`section-${data.id + 1}`} smooth={true} duration={500}>
+          <ScrollerButton />
         </Link>
       </ScrollStyled>
     </ContainerStyled>

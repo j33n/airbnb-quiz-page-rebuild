@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface ContainerProps {
-  align?: 'left' | 'right' | 'center';
+  align?: 'left' | 'right' | 'center'
 }
 
 export const Container = styled.div<ContainerProps>`

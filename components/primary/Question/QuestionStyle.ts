@@ -56,15 +56,6 @@ export const QuestionTitleStyled = styled.h1`
   margin-bottom: 15px;
 `
 
-export const VerticalLineStyled = styled.div`
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  left: 50%;
-  margin-left: -0.5px;
-  border-right: 1px solid #e4e4e4;
-`
-
 export const ScrollStyled = styled.div<IScrollStyled>`
   position: absolute;
   left: 50%;

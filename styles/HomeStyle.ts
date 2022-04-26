@@ -37,12 +37,12 @@ export const QuizTitleStyle = styled.p`
 `
 
 export const VerticalLineStyled = styled.div`
-  position: absolute;
+  position: fixed;
   width: 1px;
   left: 50%;
   margin-left: -0.5px;
   border-right: 1px solid #e4e4e4;
-  height: 50%;
+  height: 100%;
   bottom: 0;
   display: block;
 `

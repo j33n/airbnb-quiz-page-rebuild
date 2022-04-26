@@ -11,12 +11,12 @@ const Header = () => {
     <Container>
       <Image src={Logo} width={75} height={68} layout="fixed" alt="logo" />
       <Box>
-        <Heading>Airbnb Trip Matcher</Heading>
+        <Heading>HomeAppeal Design Matcher</Heading>
       </Box>
       <TextStyle>
-        Can’t decide where to roam this year? We’ve got you covered. Take our
-        quiz to find out your Travel Personality – and we’ll take care of the
-        rest.
+        Can’t decide which renovation works for your home? We’ve got you
+        covered. Take our quiz to find out what your Renovation should look like
+        – and we’ll take care of the rest.
       </TextStyle>
     </Container>
   )
