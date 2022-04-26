@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
+import useScrollBlock from 'hooks/useScrollBlock'
 
 import {Header, QuizHolder, ScrollerButton} from 'components'
 
@@ -14,6 +15,12 @@ import {
 } from 'styles/HomeStyle'
 
 const Home = () => {
+  const [blockScroll] = useScrollBlock()
+
+  useEffect(() => {
+    blockScroll()
+  }, [blockScroll])
+
   return (
     <Container>
       <MainContainerStyle id="section-0">
@@ -22,7 +29,7 @@ const Home = () => {
           <Header />
           <QuizTitleStyle>Take the quiz!</QuizTitleStyle>
           <Link to="section-1" smooth={true} duration={500}>
-            <ScrollerButton />
+              <ScrollerButton />
           </Link>
         </HeaderContentStyled>
       </MainContainerStyle>

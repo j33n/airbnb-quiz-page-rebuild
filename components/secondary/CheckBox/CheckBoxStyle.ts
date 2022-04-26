@@ -7,6 +7,7 @@ export declare interface IActive {
 export const Container = styled.div<IActive>`
   border: 2px solid transparent;
   border-bottom: 2px solid rgba(238, 238, 238, 0.4);
+  cursor: pointer;
 
   &:first-child {
     border-top: 2px solid rgba(238, 238, 238, 0.4);
@@ -23,6 +24,13 @@ export const Container = styled.div<IActive>`
     `
     background: #5da8fc;
     color: #fff;
+    border-top: 0;
+    border-bottom: 0;
+    border: 2px solid #5da8fc;
+
+    &:first-child {
+      border-top: 0;
+    }
   `}
 `
 
@@ -62,7 +70,6 @@ export const InputStyled = styled.div<IActive>`
     props.active &&
     `
       border: solid 2px #fff;
-      
     `}
 `
 

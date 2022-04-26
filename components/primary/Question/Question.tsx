@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import Image from 'next/image'
 
 import {Link} from 'react-scroll'
@@ -21,7 +22,11 @@ declare interface IQuestion {
 }
 
 const Question = ({data, size}: IQuestion) => {
-  const handleChange = (checked: boolean) => {}
+  const [checked, setChecked] = useState<number>()
+
+  const handleChange = (value: number) => {
+    setChecked(value)
+  }
 
   return (
     <ContainerStyled id={`section-${data.id}`}>
@@ -43,9 +48,11 @@ const Question = ({data, size}: IQuestion) => {
         {data.answers.map((answer: AnswerType) => (
           <CheckBox
             key={answer.id}
+            value={answer.id}
+            checked={checked === answer.id}
             label={answer.description}
-            href={`#section-${data.id + 1}`}
-            handleChange={() => handleChange}
+            to={`section-${data.id + 1}`}
+            handleChange={(value: number) => handleChange(value)}
           />
         ))}
       </RightBoxStyled>
