@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 
 import {Header} from 'components'
 
+import {QuizType} from 'types'
+
 import quizData from 'data/quiz'
 
 import {
@@ -18,7 +20,7 @@ const Success = () => {
   const [resDataFetched, setResDataFetched] = useState([])
 
   useEffect(() => {
-    const quizData: any = JSON.parse(localStorage.getItem('quizData'))
+    const quizData: any = JSON.parse(localStorage.getItem('quizData') || "")
     setResDataFetched(quizData)
   }, [])
 
