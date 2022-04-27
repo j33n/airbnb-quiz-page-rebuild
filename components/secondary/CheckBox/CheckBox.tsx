@@ -26,7 +26,7 @@ const CheckBox = ({label, value, handleChange, to, checked}: ICheckBox) => {
 
   return (
     <Container active={checked}>
-      <Link to={to} onClick={onChange}>
+      <Link to={to} smooth={true} duration={500} onClick={onChange}>
         <LinkStyled>
           <InputStyled active={checked}>
             <Image src={Tick} alt="check box" />

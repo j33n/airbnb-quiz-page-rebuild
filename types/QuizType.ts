@@ -10,4 +10,9 @@ export type QuestionType = {
   answers: AnswerType[]
 }
 
+export type QuizResponseType = {
+  answerId: number
+  responseId: number
+}
+
 export type QuizType = QuestionType[]

@@ -1,4 +1,5 @@
 import IBox from './IBox'
-import {QuizType, QuestionType, AnswerType} from './QuizType'
+import IQuizHolder from './IQuizHolder'
+import {QuizType, QuestionType, AnswerType, QuizResponseType} from './QuizType'
 
-export type {IBox, QuizType, QuestionType, AnswerType}
+export type {IBox, QuizType, QuestionType, AnswerType, QuizResponseType, IQuizHolder}

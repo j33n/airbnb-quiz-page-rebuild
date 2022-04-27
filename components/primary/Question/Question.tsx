@@ -14,18 +14,20 @@ import {
   ScrollStyled,
 } from './QuestionStyle'
 
-import {QuestionType, AnswerType} from 'types'
+import {QuestionType, AnswerType, QuizResponseType} from 'types'
 
 declare interface IQuestion {
   data: QuestionType
   size: number
+  handleValidation: (value: QuizResponseType) => void
 }
 
-const Question = ({data, size}: IQuestion) => {
+const Question = ({data, size, handleValidation}: IQuestion) => {
   const [checked, setChecked] = useState<number>()
 
   const handleChange = (value: number) => {
     setChecked(value)
+    handleValidation({answerId: data.id, responseId: value})
   }
 
   return (
