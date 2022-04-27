@@ -14,6 +14,7 @@ const QuizHolder = ({redirectToSuccessPage}: IQuizHolder) => {
   useEffect(() => {
     // Check all questions are answered
     if (quizResult.length === quizData.length) {
+      localStorage.setItem('quizData', JSON.stringify(quizResult))
       redirectToSuccessPage()
     }
   })

@@ -13,7 +13,6 @@ export const MainContainerStyle = styled.section`
   margin-right: auto;
   padding-left: 25px;
   padding-right: 25px;
-  height: 100vh;
   width: 100%;
 `
 
@@ -31,4 +30,34 @@ export const QuizTitleStyle = styled.p`
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
+`
+
+export const ResultsBoxStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+`
+
+export const ContainerResultStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-weight: 300;
+`
+
+export const QuestionStyled = styled.span`
+  display: block;
+  font-size: 24px;
+  line-height: 1.38;
+  letter-spacing: -0.2px;
+  color: #67a2ff;
+  font-weight: 600;
+`
+
+export const AnswerStyled = styled.span`
+  display: block;
 `

@@ -7,8 +7,8 @@ import {Container, Heading, TextStyle} from './HeaderStyle'
 import Logo from 'assets/ba_logo.png'
 
 export declare interface IHeader {
-  title: string
-  description: string
+  title?: string
+  description?: string
 }
 
 const Header = ({title, description}: IHeader) => {
