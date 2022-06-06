@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About Project
+We are rebuilding Airbnb quiz page that can be found [here](https://news.airbnb.com/tripmatcher)
+Our app is hosted at [Airbnb Quiz Page](https://airbnb-quiz-page.vercel.app/)
 
 ## Getting Started
 
