@@ -1,6 +1,8 @@
 # About Project
-We are rebuilding Airbnb quiz page that can be found [here](https://news.airbnb.com/tripmatcher)
-Our app is hosted at [Airbnb Quiz Page](https://airbnb-quiz-page.vercel.app/)
+We are rebuilding [Airbnb quiz page](https://news.airbnb.com/tripmatcher)
+
+# Demo
+[Airbnb Quiz Page](https://airbnb-quiz-page.vercel.app/)
 
 ## Getting Started
 
